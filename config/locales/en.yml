@@ -3,6 +3,7 @@ en:
     start: start
     about: about
     sign_in: sign-in
+    redirect_to_idp: redirect-to-idp
     about_certified_companies: about-certified-companies
     about_identity_accounts: about-identity-accounts
     about_choosing_a_company: about-choosing-a-company
@@ -58,6 +59,11 @@ en:
       select_idp: Select %{name}
       sign_in_idp: Sign in with %{name}
       forgot_company: I can’t remember which company verified me
+    redirect_to_idp:
+      title: Loading
+      heading: Continue to next step
+      message: Because Javascript is not enabled on your browser, you must press the continue button
+      button: Continue
     cookies:
       title: Cookies
     feedback:

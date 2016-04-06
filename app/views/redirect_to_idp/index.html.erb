@@ -1,4 +1,4 @@
-<% content_for :page_title, 'Loading' %>
+<% content_for :page_title, t('hub.redirect_to_idp.title') %>
 
 <script>
   function init(){document.forms[0].submit();}
@@ -7,14 +7,15 @@
 
 <div class="content">
   <div class="grid-row">
-    <div class="column-two-thirds"><h1 class="heading-xlarge">Continue to next step</h1>
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge"><%= t('hub.redirect_to_idp.heading') %></h1>
       <div class="application-notice info-notice">
-        <p>Because Javascript is not enabled on your browser, you must press the continue button</p></div>
+        <p><%= t('hub.redirect_to_idp.message') %></p></div>
         <%= form_tag(@saml_message.location) do %>
             <%= hidden_field_tag 'SAMLRequest', @saml_message.saml_request %>
             <%= hidden_field_tag 'RelayState', @saml_message.relay_state %>
             <%= hidden_field_tag 'registration', @saml_message.registration %>
-            <%= submit_tag 'Continue', id: 'continue-button' %>
+            <%= submit_tag t('hub.redirect_to_idp.button'), id: 'continue-button', class: 'button' %>
         <% end %>
     </div>
   </div>

@@ -3,6 +3,7 @@ cy:
     start: dechrau
     about: am
     sign_in: mewngofnodi
+    redirect_to_idp: redirect-to-idp-cy
     about_certified_companies: am-gwmniau-ardystiedig
     about_identity_accounts: am-gyfrifon-hunaniaeth
     about_choosing_a_company: am-ddewis-cwmni
@@ -61,6 +62,11 @@ cy:
       select_idp: Ddewis %{name}
       sign_in_idp: Llofnodi i mewn gyda %{name}
       forgot_company: Ni allaf gofio pa gwmni wnaeth fy nilysu
+    redirect_to_idp:
+      title: Loading
+      heading: Continue to next step
+      message: Because Javascript is not enabled on your browser, you must press the continue button
+      button: Continue
     cookies:
       title: Cwcis
     feedback:
